@@ -15,6 +15,16 @@ namespace Welding_engeneer_system
         Qualification qualification = new Qualification();
         Elements element1 = new Elements();
         Elements element2 = new Elements();
-
+        public string WeldEndDate() 
+        {
+            string date="";
+            return date;
+        }
+        public string Welder() 
+        {
+            string welder = "";
+            return welder;
+        }
+        
     }
 }
