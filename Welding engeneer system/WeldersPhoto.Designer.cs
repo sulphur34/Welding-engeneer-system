@@ -35,16 +35,16 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(16, 17);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(455, 21);
             this.comboBox1.TabIndex = 0;
-            this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
+            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
+            this.comboBox1.Enter += new System.EventHandler(this.comboBox1_Enter);
+            this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
             // 
             // pbFotoWelder
             // 
@@ -65,7 +65,6 @@
             this.MaximizeBox = false;
             this.Name = "WeldersPhoto";
             this.Text = "WeldersPhoto";
-            this.Load += new System.EventHandler(this.WeldersPhoto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoWelder)).EndInit();
             this.ResumeLayout(false);
 

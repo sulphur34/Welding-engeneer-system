@@ -61,6 +61,7 @@
     <Compile Include="Qualification.cs" />
     <Compile Include="Specialist.cs" />
     <Compile Include="Techcnology.cs" />
+    <Compile Include="Tool.cs" />
     <Compile Include="WeldersPhoto.cs">
       <SubType>Form</SubType>
     </Compile>

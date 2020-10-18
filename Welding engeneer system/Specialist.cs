@@ -14,11 +14,6 @@ namespace Welding_engeneer_system
         public Specialist()
         {
 
-        }
-        public Image SpecialistPhoto(string specialistName)
-        {
-            Image SpecialistPhoto = Metafile.FromFile(@"\\veles-srv46-fs\Велесстрой\Служба сварочно-монтажных работ\ОГС\004-qualifications\02. Аттестационное удостоверение сварщиков\Фото сварщиков\новое фото сварщиков\"+specialistName);
-            return SpecialistPhoto;
-        }        
+        }     
     }
 }
