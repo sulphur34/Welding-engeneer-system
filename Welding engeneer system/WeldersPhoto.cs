@@ -22,8 +22,8 @@ namespace Welding_engeneer_system
         String mypath = @"\\veles-srv46-fs\Велесстрой\Служба сварочно-монтажных работ\ОГС\004-qualifications\02. Аттестационное удостоверение сварщиков\Фото сварщиков\новое фото сварщиков\";
         private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            Specialist spec = new Specialist();
-            pbFotoWelder.Image = spec.SpecialistPhoto(comboBox1.SelectedValue.ToString());
+            Tool spec = new Tool();
+            pbFotoWelder.Image = spec.ImageByName(comboBox1.SelectedValue.ToString());
             pbFotoWelder.SizeMode = PictureBoxSizeMode.StretchImage;
             comboBox1.SelectionStart = comboBox1.Text.Length;
         }
@@ -38,7 +38,9 @@ namespace Welding_engeneer_system
         {
             if (e.KeyChar == 13)
             {
-                comboBox1.DataSource = finallist;
+                Tool tool = new Tool();
+                List<string> filelist = (from a in Directory.GetFiles(mypath) select Path.GetFileName(a).Replace(".jpg", "")).ToList();
+                comboBox1.DataSource = tool.FindItemInList(filelist, comboBox1.Text);
                 comboBox1.DroppedDown = true;
             }
 

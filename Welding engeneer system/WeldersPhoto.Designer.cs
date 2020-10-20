@@ -42,7 +42,6 @@
             this.comboBox1.Size = new System.Drawing.Size(455, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
-            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             this.comboBox1.Enter += new System.EventHandler(this.comboBox1_Enter);
             this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
             // 

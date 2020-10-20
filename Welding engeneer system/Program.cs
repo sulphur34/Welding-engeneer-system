@@ -16,7 +16,7 @@ namespace Welding_engeneer_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WeldersPhoto());
+            Application.Run(new FilePathStorage());
         }
     }
 }

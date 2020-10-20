@@ -49,6 +49,12 @@
     <Compile Include="Elements.cs" />
     <Compile Include="Equipment.cs" />
     <Compile Include="Excel.cs" />
+    <Compile Include="FilePathStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilePathStorage.Designer.cs">
+      <DependentUpon>FilePathStorage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
       <DependentUpon>WeldersPhoto.cs</DependentUpon>
     </Compile>
     <Compile Include="WeldJoint.cs" />
+    <EmbeddedResource Include="FilePathStorage.resx">
+      <DependentUpon>FilePathStorage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
